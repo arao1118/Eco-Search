@@ -8,14 +8,14 @@ import ComparisonView from './components/ComparisonView';
 import ProductDetailsModal from './components/ProductDetailsModal';
 
 
-import { subscribeToAuthChanges, logoutUser } from '../services/authService';
+import { subscribeToAuthChanges, logoutUser } from './services/authService.js';
 import {
     fetchUserCart,
     addItemToCloudCart,
     updateItemQuantityInCloud,
     removeItemFromCloudCart
-} from '../services/cartService';
-import { searchProducts } from '../services/registryService';
+} from './services/cartService';
+import { searchProducts } from './services/registryService';
 
 const HOME_CATEGORIES = [
     { id: 'personal-care', name: 'Personal Care', query: 'personal care' },
